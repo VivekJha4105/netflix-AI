@@ -49,7 +49,7 @@ const Header = () => {
           <img className="w-1/12 h-1/12" src={user?.photoURL} />
           <div>
             <button
-              className="px-3 mx-2 font-bold text-red shadow-md rounded"
+              className="px-3 mx-2 font-bold text-white shadow-md rounded"
               onClick={handleSignOut}
             >
               Sign Out

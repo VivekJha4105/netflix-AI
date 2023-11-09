@@ -18,6 +18,9 @@
 - Bugfix: Fixed the issue of user redirecting "/" to "/browse" page, if already logged in, and "/browse" to "/" page, if not logged in.
 - Unsubscribed to the onAuthStateChanged callback. ( Using return statement inside useEffect hook. A good sanitary practice.)
 - Adding hardcoded values to a constants file.
+- Registered at TMDBs.
+- Generated an API key/ access token and made an API call using it for now playing movies.
+- Made a fetch call to get the nowPlayingMovies and added it to the state variable nowPlayingMovies of the redux store.
 
 # Features:
 

@@ -3,3 +3,12 @@ export const LOGO =
 
 export const USER_AVATAR =
   "https://cdn-icons-png.flaticon.com/512/3135/3135715.png";
+
+export const API_OPTIONS = {
+  method: "GET",
+  headers: {
+    accept: "application/json",
+    Authorization:
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NmU5MzYxY2UxMTQzOGM1NDVlZTMyODJlYWUzOWNkMSIsInN1YiI6IjY1NGExYTkwMzkxYjljMDExZDJmZjE3MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.CuWWACNK1UE3zbEX_6BqjALCCI_8VMwNwiGWCbvmzpU",
+  },
+};
