@@ -41,12 +41,12 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="absolute flex justify-between bg-gradient-to-b from-black z-20">
-      <img className="w-2/12" alt="Netflix" src={LOGO} />
+    <div className="absolute pt-2 flex justify-between bg-gradient-to-b from-black z-20">
+      <img className="w-1/12" alt="Netflix" src={LOGO} />
 
       {user && (
         <div className="flex items-center justify-end">
-          <img className="w-1/12 h-1/12" src={user?.photoURL} />
+          <img className="w-1/12 " src={user?.photoURL} />
           <div>
             <button
               className="px-3 mx-2 font-bold text-white shadow-md rounded"

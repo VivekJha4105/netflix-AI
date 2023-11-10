@@ -21,6 +21,10 @@
 - Registered at TMDBs.
 - Generated an API key/ access token and made an API call using it for now playing movies.
 - Made a fetch call to get the nowPlayingMovies and added it to the state variable nowPlayingMovies of the redux store.
+- Encapsulated the fetch call and the useEffect hook in custom hook.
+- Divided the browse page to Main and Secondary container.
+- Fetched the trailer video for the movie in Main Section and encapsulated the fetching business logic in a custom hook.
+- Embedded the fetched trailer video and autoplayed it.
 
 # Features:
 
@@ -37,3 +41,9 @@
 - Netflix GPT Page
   - Search Bar
   - Netflix Movie Suggestions.
+
+# Issues:
+
+- Scrollbar
+- How to flex the movie cards better.
+- Use carousel

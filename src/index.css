@@ -1,4 +1,32 @@
-
 @tailwind base;
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+}
+
+
+#movieList {
+    overflow: hidden;
+    transition: overflow 200ms ease-in-out;
+}
+
+#movieList:hover {
+    overflow: scroll;
+
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(142, 137, 137);
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 15px;
+}
+
+
 @tailwind components;
 @tailwind utilities;
