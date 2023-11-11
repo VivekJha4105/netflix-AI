@@ -25,6 +25,17 @@
 - Divided the browse page to Main and Secondary container.
 - Fetched the trailer video for the movie in Main Section and encapsulated the fetching business logic in a custom hook.
 - Embedded the fetched trailer video and autoplayed it.
+- Buit the secondary component with different movies lists.
+- Built the movies cards to go into movies list.
+- TMDB image URL.
+- Built UI as close to Netflix.
+- Encapsulated different API calls in custom hooks.
+- UI of GPT Search Page.
+- A search bar with links to the GPT Search for movies.
+- Build in multi-language feature.
+- Used a language constant file to store possible translations of all the visible string, in multiple languages, on the page.
+- Built in a dynamic drop-down for language selection using a SUPPORTED_LANGUAGES array.
+- Used redux store to save the current language as well as an action to change it.
 
 # Features:
 
