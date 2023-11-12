@@ -53,11 +53,11 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute pt-2 flex flex-col md:flex-row justify-between text-xs md:text-lg bg-gradient-to-b from-black z-20">
+    <div className="absolute pt-2 flex flex-col items-center md:flex-row  md:justify-between text-xs md:text-lg bg-gradient-to-b from-black z-20">
       <img className="w-3/12 md:w-1/12" alt="Netflix" src={LOGO} />
 
       {user && (
-        <div className="flex items-center justify-end">
+        <div className="flex items-center justify-center md:justify-end">
           {gpt.showGptSearchArea && (
             <select
               className="mr-2 md:mr-4 px-1 md:px-4 py-1 md:py-2 bg-slate-700 font-bold text-white rounded-md outline-none bg-opacity-70"

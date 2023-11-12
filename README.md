@@ -39,8 +39,12 @@
 - Used the OPENAI_API_KEY to search and recommend movies based on the prompt passed to it.
 - Prompt should be such that result is produced in a desired manner.
 - Results are again used to search the TMDB for movies matching that result.
+- Search Results are added to the state variable in gptSlice and populated to the UI accordingly.
 - MovieList component used again in order to display the results.
 - Used memoaisation to prevent unnecessary API calls to the server.
+- Used the .env file to store our API_KEYS and sesitive info.
+- Included the .env file to gitignore file.
+- Made our UI somewhat responsive, finishing touch required.
 
 # Features:
 
@@ -64,3 +68,4 @@
 - How to flex the movie cards better.
 - Use carousel
 - Add Shimmer UI/Loading Icon
+- Make UI more responsive.

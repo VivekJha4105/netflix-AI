@@ -4,8 +4,8 @@ import MovieCard from "./MovieCard";
 const MovieList = ({ title, movies }) => {
   //   console.log(movies);
   return (
-    <div className="pt-4 px-4 ">
-      <h1 className="font-bold text-xl pb-2 text-white">{title}</h1>
+    <div className="py-2 md:px-2">
+      <h1 className="font-bold text-sm md:text-xl pb-2 text-white">{title}</h1>
       <div id="movieList" className="flex scrollbar-track-black">
         <div className="flex">
           {movies &&

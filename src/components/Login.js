@@ -93,15 +93,15 @@ const Login = () => {
       <Header />
 
       <div className="absolute">
-        <img src={BG_IMG_URL} />
+        <img className="h-screen object-cover md:h-[100%]" src={BG_IMG_URL} />
       </div>
 
       <form
         onSubmit={(e) => e.preventDefault()}
-        className="absolute flex flex-col items-center rounded-lg p-4 bg-black bg-opacity-80 w-3/12 h-auto my-44 mx-auto right-0 left-0"
+        className="absolute  w-10/12 md:w-3/12 h-auto my-32 md:my-44 mx-auto right-0 left-0 flex flex-col items-center rounded-lg md:p-4 bg-black bg-opacity-80"
       >
-        <div className="my-6 p-2 text-3xl text-white font-bold">
-          <p>{isSignInForm ? "Sign In" : "Sign Up"}</p>
+        <div className="my-2 md:my-6 p-2 text-2xl md:text-3xl text-white font-bold">
+          <p>{isSignInForm ? "SIGN IN" : "SIGN UP"}</p>
         </div>
 
         {!isSignInForm && (
@@ -134,7 +134,7 @@ const Login = () => {
         </button>
 
         {isSignInForm ? (
-          <p className="p-2 text-gray-400">
+          <p className="p-2 pb-6 text-gray-400">
             New to Netflix?{" "}
             <span
               className="text-white font-bold cursor-pointer"
@@ -145,7 +145,7 @@ const Login = () => {
             now!
           </p>
         ) : (
-          <p className="p-2 text-gray-400">
+          <p className="p-2 pb-6 text-gray-400">
             Already a User?{" "}
             <span
               className="text-white font-bold cursor-pointer"
