@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlice";
 import { LOGO, SUPPORTED_LANGUAGES } from "../utils/constants";
-import { toggleGptSearchArea } from "../utils/gptSlice";
+import { clearDataOnLogout, toggleGptSearchArea } from "../utils/gptSlice";
 import { changeLanguage } from "../utils/configSlice";
 
 const Header = () => {
@@ -35,6 +35,7 @@ const Header = () => {
         navigate("/browse");
       } else {
         dispatch(removeUser());
+        dispatch(clearDataOnLogout());
         navigate("/");
       }
     });
@@ -52,14 +53,14 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute pt-2 flex justify-between bg-gradient-to-b from-black z-20">
-      <img className="w-1/12" alt="Netflix" src={LOGO} />
+    <div className="absolute pt-2 flex flex-col md:flex-row justify-between text-xs md:text-lg bg-gradient-to-b from-black z-20">
+      <img className="w-3/12 md:w-1/12" alt="Netflix" src={LOGO} />
 
       {user && (
         <div className="flex items-center justify-end">
           {gpt.showGptSearchArea && (
             <select
-              className="mr-4 px-4 py-2 bg-slate-700 text-white rounded-md outline-none bg-opacity-70"
+              className="mr-2 md:mr-4 px-1 md:px-4 py-1 md:py-2 bg-slate-700 font-bold text-white rounded-md outline-none bg-opacity-70"
               onChange={handleLanguageChange}
             >
               {SUPPORTED_LANGUAGES.map((lang) => (
@@ -70,7 +71,7 @@ const Header = () => {
             </select>
           )}
           <button
-            className="px-4 py-2 mr-4 font-bold border border-red-500 rounded-lg text-white bg-red-500 bg-opacity-50 hover:bg-opacity-100 hover:bg-red-500 hover:text-slate-900"
+            className="px-1 md:px-4 py-1 md:py-2 mr-4 font-bold border border-red-500 rounded-lg text-white bg-red-500 bg-opacity-50 hover:bg-opacity-100 hover:bg-red-500 hover:text-slate-900"
             onClick={handleSearchGPTClick}
           >
             {gpt.showGptSearchArea ? "Browse Movies" : "GPT Search"}

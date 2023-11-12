@@ -36,6 +36,11 @@
 - Used a language constant file to store possible translations of all the visible string, in multiple languages, on the page.
 - Built in a dynamic drop-down for language selection using a SUPPORTED_LANGUAGES array.
 - Used redux store to save the current language as well as an action to change it.
+- Used the OPENAI_API_KEY to search and recommend movies based on the prompt passed to it.
+- Prompt should be such that result is produced in a desired manner.
+- Results are again used to search the TMDB for movies matching that result.
+- MovieList component used again in order to display the results.
+- Used memoaisation to prevent unnecessary API calls to the server.
 
 # Features:
 
@@ -58,3 +63,4 @@
 - Scrollbar
 - How to flex the movie cards better.
 - Use carousel
+- Add Shimmer UI/Loading Icon

@@ -12,7 +12,7 @@
 }
 
 #movieList:hover {
-    overflow: scroll;
+    overflow: auto;
 
 }
 

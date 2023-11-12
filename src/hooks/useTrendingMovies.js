@@ -1,12 +1,13 @@
 import { useEffect } from "react";
 import { API_OPTIONS } from "../utils/constants";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addTrendingMovies } from "../utils/movieSlice";
 
 // Fetching Trending movies data and updating the trendingMovies state data, of movieSlice, in the redux store.
 
 const useTrendingMovies = () => {
   const dispatch = useDispatch();
+  const trendingMovies = useSelector((store) => store.movies.trendingMovies);
 
   const getTrendingMovies = async () => {
     const res = await fetch(
@@ -15,11 +16,10 @@ const useTrendingMovies = () => {
     );
     const data = await res.json();
     dispatch(addTrendingMovies(data.results));
-    // console.log("Trending: ", data.results);
   };
 
   useEffect(() => {
-    getTrendingMovies();
+    !trendingMovies && getTrendingMovies();
   }, []);
 };
 
