@@ -76,11 +76,7 @@ const Header = () => {
           >
             {gpt.showGptSearchArea ? "Browse Movies" : "GPT Search"}
           </button>
-          <img
-            className="w-1/12 "
-            src={user?.photoURL}
-            alt="User Profile Image"
-          />
+          <img className="w-1/12 " src={user?.photoURL} alt="User Profile" />
           <div>
             <button
               className="px-3 mx-2 font-bold text-white shadow-md rounded border border-slate-700"

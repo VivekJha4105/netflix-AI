@@ -72,7 +72,7 @@ const Login = () => {
         password.current.value
       )
         .then((userCredential) => {
-          const user = userCredential.user;
+          // const user = userCredential.user;
           navigate("/browse");
         })
         .catch((error) => {
