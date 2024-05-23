@@ -93,7 +93,11 @@ const Login = () => {
       <Header />
 
       <div className="absolute">
-        <img className="h-screen object-cover md:h-[100%]" src={BG_IMG_URL} />
+        <img
+          className="h-screen object-cover md:h-[100%]"
+          src={BG_IMG_URL}
+          alt="bg-cover"
+        />
       </div>
 
       <form

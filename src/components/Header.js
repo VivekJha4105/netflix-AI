@@ -42,7 +42,7 @@ const Header = () => {
 
     // unsubscribe the onAuthStateChanged API.
     return () => unsubscribe();
-  }, []);
+  }, [dispatch, navigate]);
 
   const handleSearchGPTClick = () => {
     dispatch(toggleGptSearchArea());
